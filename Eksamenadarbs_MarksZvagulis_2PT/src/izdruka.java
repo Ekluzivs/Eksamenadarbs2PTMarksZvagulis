@@ -21,6 +21,7 @@ public class izdruka {
 		System.out.print("jusu atbilde:");
 		//ierakstot atbildi, tas ņems tikai pirmo burtu, ja gadījumā ieraksta vārdu vai 2 burtus un vairāk
 		cau=lol.next().charAt(0);
+		cau=Character.toLowerCase(cau);
 		//sāks pārbaudīt atbildes
 		switch(cau) {
 		case 'a':
@@ -49,6 +50,7 @@ public class izdruka {
 	System.out.println("d: 1959");
 	System.out.print("jusu atbilde:");
 	cau=lol.next().charAt(0);
+	cau=Character.toLowerCase(cau);
 	switch(cau) {
 	case 'b': case 'd': case 'a':
 		System.out.println("nepareizi");
@@ -76,6 +78,7 @@ public class izdruka {
 	System.out.println("d: 6");
 	System.out.print("jusu atbilde:");
 	cau=lol.next().charAt(0);
+	cau=Character.toLowerCase(cau);
 	switch(cau) {
 
 	case 'b': case 'c': case 'a':
@@ -104,6 +107,7 @@ public class izdruka {
 	System.out.println("d: 1836");
 	System.out.print("jusu atbilde:");
 	cau=lol.next().charAt(0);
+	cau=Character.toLowerCase(cau);
 	switch(cau) {
 	case 'a':
 		System.out.println("pareizi");
@@ -129,6 +133,7 @@ public class izdruka {
 	System.out.println("d: Brazīlija");
 	System.out.print("jusu atbilde:");
 	cau=lol.next().charAt(0);
+	cau=Character.toLowerCase(cau);
 	switch(cau) {
 	case 'a': case 'd': case 'c':
 		System.out.println("nepareizi");
@@ -155,6 +160,7 @@ public class izdruka {
 	System.out.println("d: 1");
 	System.out.print("jusu atbilde:");
 	cau=lol.next().charAt(0);
+	cau=Character.toLowerCase(cau);
 	switch(cau) {
 	case 'a': case 'b': case 'd':
 		System.out.println("nepareizi");
@@ -181,6 +187,7 @@ public class izdruka {
 	System.out.println("d: Nissan");
 	System.out.print("jusu atbilde:");
 	cau=lol.next().charAt(0);
+	cau=Character.toLowerCase(cau);
 	switch(cau) {
 	case 'a': case 'd': case 'c':
 		System.out.println("nepareizi");
@@ -206,6 +213,7 @@ public class izdruka {
 	System.out.println("d: braukt aizliegts");
 	System.out.print("jusu atbilde:");
 	cau=lol.next().charAt(0);
+	cau=Character.toLowerCase(cau);
 	switch(cau) {
 	case 'a':
 		System.out.println("pareizi");
@@ -230,6 +238,7 @@ public class izdruka {
 	System.out.println("d: 1998");
 	System.out.print("jusu atbilde:");
 	cau=lol.next().charAt(0);
+	cau=Character.toLowerCase(cau);
 	switch(cau) {
 	case 'c':
 		System.out.println("pareizi");
@@ -253,6 +262,7 @@ public class izdruka {
 	System.out.println("d: 1869");
 	System.out.print("jusu atbilde:");
 	cau=lol.next().charAt(0);
+	cau=Character.toLowerCase(cau);
 	switch(cau) {
 	case 'a': case 'c': case 'b':
 		System.out.println("nepareizi");

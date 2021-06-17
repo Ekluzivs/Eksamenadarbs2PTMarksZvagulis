@@ -22,11 +22,13 @@ public class starts {
 			case "ja":
 				izdruka.jauta1();
 			break;
+			case "ne":
+				//iziet no sistemas, praktiski beidzot darbibu
+				System.exit(1);
+			break;
 			}
-			//ja atbilde ir ne, tad talakais nosacijums ir beigt darbibu
-		}while(atbilde=="ne");
+			//turpinâs jautât kamçr nav atbildçts vârds ne
+		}while(atbilde!="ne");
 		lol.close();
-		//iziet no sistemas, praktiski beidzot darbibu
-		System.exit(1);
 	}
 }
