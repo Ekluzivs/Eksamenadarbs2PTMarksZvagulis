@@ -10,14 +10,14 @@ public class izdruka {
 	//Izveidots Scanner, priekš atbildēm
 	static Scanner lol = new Scanner(System.in);
 	public static void jauta1() {
-		System.out.println("kurš no šiem nav Eiropas savienotās valsts?");
+		System.out.println("kāds cikls ir do while cikls?");
 		//ir "do" jo, ja lietotājs atbild ar nepareizo burtu, tad jautās vēlreiz līdz ko atbild
 		do {
 		//izprintēs 4 atbilžu variantus
-		System.out.println("a: Serbija");
-		System.out.println("b: Kipra");
-		System.out.println("c: Latvija");
-		System.out.println("d: Andora");
+		System.out.println("a: beigu nosacījuma");
+		System.out.println("b: sākuma nosacījuma");
+		System.out.println("c: cikls ar skaitītāju");
+		System.out.println("d: mehāniskais cikls");
 		System.out.print("jusu atbilde:");
 		//ierakstot atbildi, tas ņems tikai pirmo burtu, ja gadījumā ieraksta vārdu vai 2 burtus un vairāk
 		cau=lol.next().charAt(0);
@@ -42,12 +42,12 @@ public class izdruka {
 		jauta2();
 	}
 	public static void jauta2() {
-	System.out.println("kurā gadā pirmo reizi nolaidās uz mēnesi?");
+	System.out.println("kuros gadījumos ir labāk izmantot do while ciklu?");
 	do {
-	System.out.println("a: 1972");
-	System.out.println("b: 1969");
-	System.out.println("c: 1966");
-	System.out.println("d: 1959");
+	System.out.println("a: precīzi zinot cik daudz atkārtosies cikls");
+	System.out.println("b: kad vēlas");
+	System.out.println("c: nezinot cik daudz atkārtosies cikls");
+	System.out.println("d: vienmēr ir vajadzīgs");
 	System.out.print("jusu atbilde:");
 	cau=lol.next().charAt(0);
 	cau=Character.toLowerCase(cau);
@@ -59,7 +59,6 @@ public class izdruka {
 	case 'c':
 		System.out.println("pareizi");
 		par+=1;
-	
 	break;
 	
 	}
@@ -69,13 +68,16 @@ public class izdruka {
 	}
 	public static void jauta3() {
 
-	System.out.println("cik daudz ferrari uzvarēja le mans pirms ford uzveica?");
+	System.out.println("kam ir jābūt tukšā laukuma vietā?");
+	System.out.println("do{");
+	System.out.println("instrukcijas");
+	System.out.println("}while(_________);");
 	do {
 		
-	System.out.println("a: 4");
-	System.out.println("b: 9");
-	System.out.println("c: 15");
-	System.out.println("d: 6");
+	System.out.println("a: instrukcijas");
+	System.out.println("b: tikai atstarpe");
+	System.out.println("c: for cikls");
+	System.out.println("d: nosacījums");
 	System.out.print("jusu atbilde:");
 	cau=lol.next().charAt(0);
 	cau=Character.toLowerCase(cau);
@@ -98,13 +100,13 @@ public class izdruka {
 	}
 	public static void jauta4() {
 	
-	System.out.println("kurā gadā sākās industrālā revolūcija?");
+	System.out.println("ja nosacījums ir true, kas notiks tālāk?");
 	do {
 		
-	System.out.println("a: 1760");
-	System.out.println("b: 1695");
-	System.out.println("c: 1903");
-	System.out.println("d: 1836");
+	System.out.println("a: pildīs instrukcijas vēlreiz");
+	System.out.println("b: cikls beigsies");
+	System.out.println("c: restartēs programmu");
+	System.out.println("d: pārbaudīs vēlreiz instrukcijas rezultātu");
 	System.out.print("jusu atbilde:");
 	cau=lol.next().charAt(0);
 	cau=Character.toLowerCase(cau);
@@ -125,12 +127,12 @@ public class izdruka {
 	}
 	public static void jauta5() {
 	
-	System.out.println("no kurienes nāca roltoni?");
+	System.out.println("kas mainās while cikla un do while cikla darbībā?");
 	do {
-	System.out.println("a: Vjetnama");
-	System.out.println("b: Japāna");
-	System.out.println("c: Koreja");
-	System.out.println("d: Brazīlija");
+	System.out.println("a: nekas neimainās, strādā identiski");
+	System.out.println("b: do while dara instrukcijas pirmās");
+	System.out.println("c: while cikls pārbauda nosacījumu vēlāk");
+	System.out.println("d: while ciklam nav nosacījumi");
 	System.out.print("jusu atbilde:");
 	cau=lol.next().charAt(0);
 	cau=Character.toLowerCase(cau);
@@ -151,13 +153,13 @@ public class izdruka {
 	}
 	public static void jauta6() {
 
-	System.out.println("cik daudzas reizes Luis Suarez iekoda futbolas spēlē?");
+	System.out.println("ja pirmajā ciklā ir false, kas notiks?");
 	do {
 		
-	System.out.println("a: 7");
-	System.out.println("b: 0");
-	System.out.println("c: 3");
-	System.out.println("d: 1");
+	System.out.println("a: neturpinās ciklu");
+	System.out.println("b: apstādinās programmu");
+	System.out.println("c: izpildīs visu instrukciju vismaz vienu reizi");
+	System.out.println("d: pildīs instrukcijas vēlreiz");
 	System.out.print("jusu atbilde:");
 	cau=lol.next().charAt(0);
 	cau=Character.toLowerCase(cau);
@@ -178,13 +180,12 @@ public class izdruka {
 	}
 	public static void jauta7() {
 
-	System.out.println("Buggatti pieder vienam mašīnas uzņēmumam, kurš tas ir?");
+	System.out.println("kāpēc do while ciklam ir sintakse?");
 	do {
-		
-	System.out.println("a: Audi");
-	System.out.println("b: Volkswagen");
-	System.out.println("c: Volvo");
-	System.out.println("d: Nissan");
+	System.out.println("a: dekorācija");
+	System.out.println("b: apstādina ciklu");
+	System.out.println("c: sāks jaunu ciklu");
+	System.out.println("d: izveido do while ciklu");
 	System.out.print("jusu atbilde:");
 	cau=lol.next().charAt(0);
 	cau=Character.toLowerCase(cau);
@@ -205,12 +206,12 @@ public class izdruka {
 	}
 	public static void jauta8() {
 
-	System.out.println("kāds ir pilnais nosaukums ceļa zīmei ķieģelis?");
+	System.out.println("kas ir īpašs ar do while uz c++ un/vai Java?");
 	do {
-	System.out.println("a: iebraukt aizliegts");
-	System.out.println("b: apstāties");
-	System.out.println("c: bīstami");
-	System.out.println("d: braukt aizliegts");
+	System.out.println("a: instrukcija drīkst būt nekā");
+	System.out.println("b: atkārto ciklu mūžīgi");
+	System.out.println("c: uz Java var būt tikai do");
+	System.out.println("d: uz c++ ir uz laika cikls");
 	System.out.print("jusu atbilde:");
 	cau=lol.next().charAt(0);
 	cau=Character.toLowerCase(cau);
@@ -230,12 +231,12 @@ public class izdruka {
 	}
 	public static void jauta9() {
 
-	System.out.println("kad iznāca mūzika no rick astley - never gonna give you up?");
+	System.out.println("a sākuma vērtība ir 1, cik daudzas reizes atkārtosies cikls ja beigās lai izprintē 17?");
 	do {
-	System.out.println("a: 2003");
-	System.out.println("b: 1990");
-	System.out.println("c: 1987");
-	System.out.println("d: 1998");
+	System.out.println("a: 17 reizes");
+	System.out.println("b: 13 reizes");
+	System.out.println("c: 16 reizes");
+	System.out.println("d: 15 reizes");
 	System.out.print("jusu atbilde:");
 	cau=lol.next().charAt(0);
 	cau=Character.toLowerCase(cau);
@@ -254,12 +255,12 @@ public class izdruka {
 	jauta10();
 	}
 	public static void jauta10() {
-	System.out.println("kurā gadā pirmo reizi spēlēja futbolu?");
+	System.out.println("kas ir nosacījums uz do while?");
 	do {
-	System.out.println("a: 1873");
-	System.out.println("b: 1922");
-	System.out.println("c: 1954");
-	System.out.println("d: 1869");
+	System.out.println("a: int izteiksme");
+	System.out.println("b: String izteiksme");
+	System.out.println("c: char izteiksme");
+	System.out.println("d: boolean izteiksme");
 	System.out.print("jusu atbilde:");
 	cau=lol.next().charAt(0);
 	cau=Character.toLowerCase(cau);
@@ -278,34 +279,34 @@ public class izdruka {
 	System.out.println(" ");
 	System.out.println("Pareizas atbildes: "+par);
 	if(jaut1==1){
-		System.out.println("kurš no šiem nav Eiropas savienotās valsts?");
+		System.out.println("kāds cikls ir do while cikls?");
 		jaut1--;
 	}if(jaut2==1){
-		System.out.println("kurā gadā pirmo reizi nolaidās uz mēnesi?");
+		System.out.println("kuros gadījumos ir labāk izmantot do while ciklu?");
 		jaut2--;
 	}if(jaut3==1){
-		System.out.println("cik daudz ferrari uzvarēja le mans pirms ford uzveica?");
+		System.out.println("kam ir jābūt tukšā laukuma vietā?");
 		jaut3--;
 	}if(jaut4==1){
-		System.out.println("kurā gadā sākās industrālā revolūcija?");
+		System.out.println("ja nosacījums ir true, kas notiks tālāk?");
 		jaut4--;
 	}if(jaut5==1){
-		System.out.println("no kurienes nāca roltoni?");
+		System.out.println("kas mainās while cikla un do while cikla darbībā?");
 		jaut5--;
 	}if(jaut6==1) {
-		System.out.println("cik daudzas reizes Luis Suarez iekoda futbolas spēlē?");
+		System.out.println("ja pirmajā ciklā ir false, kas notiks?");
 		jaut6--;
 	}if(jaut7==1){
-		System.out.println("Buggatti pieder vienam mašīnas uzņēmumam, kurš tas ir?");
+		System.out.println("kāpēc do while ciklam ir sintakse?");
 		jaut7--;
 	}if(jaut8==1){
-		System.out.println("kāds ir pilnais nosaukums ceļa zīmei ķieģelis?");
+		System.out.println("kas ir īpašs ar do while uz c++ un/vai Java?");
 		jaut8--;
 	}if(jaut9==1){
-		System.out.println("kad iznāca mūzika no rick astley - never gonna give you up?");
+		System.out.println("a sākuma vērtība ir 1, cik daudzas reizes atkārtosies cikls ja beigās lai izprintē 17?");
 		jaut9--;
 	}if(jaut10==1){
-		System.out.println("kurā gadā pirmo reizi spēlēja futbolu?");
+		System.out.println("kas ir nosacījums uz do while?");
 		jaut10--;
 	}
 	System.out.println(" ");
